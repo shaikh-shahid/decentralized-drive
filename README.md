@@ -1,16 +1,13 @@
-# Simple User Login and Signup System 
+# Decentralized Drive
 
-This is a simple and working user registration and authentication system built using Node, MongoDB and Redis. 
-
-MongoDB acts as a primary data store and Redis is used as a external session store. 
+This is a demo application built on top of maze framework.
 
 ## Requirements
 
 You need to have following softwares installed in your system.
 
-* Node (v11.15.0 or higher)
-* MongoDB
-* Redis
+- Maze framework running
+- Node.js
 
 ## How to run
 
@@ -26,11 +23,9 @@ Change the config.json file according to your system configuration.
 
 ```
 {
-  "mongodbURL": "mongodb://localhost:27017/userDemo",
-  "redisHost": "localhost",
-  "redisPort": 6379,
-  "sessionSecret": "some-secret-hash",
-  "port": 3000,
+  "backendURL": "http://localhost:3000/api/v1/m",
+  "port": 4000,
+  "tokenSecret": "some-secret-hash-or-something",
   "env": "development"
 }
 ```
@@ -41,4 +36,4 @@ Then run the application using the following command.
 node app.js
 ```
 
-Navigate your browser to ```localhost:3000``` to view the app. 
+Navigate your browser to `localhost:3000` to view the app.
